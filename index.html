@@ -4,12 +4,18 @@
   <meta charset="utf-8"/>
   <title>Marked in the browser</title>
   <script src="//cdn.bootcss.com/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
   <div id="content"></div>
   <script>
+    var markdown = `
+    # 我的博客
+    啊手动阀手动阀
+
+    `;
     document.getElementById('content').innerHTML =
-      marked('# Marked in browser\n\nRendered by **marked**.');
+      marked(markdown);
   </script>
 </body>
 </html>
